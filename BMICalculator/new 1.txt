@@ -1,0 +1,107 @@
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<style>
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+.body {
+  font-family: 'PT Sans Bold', Arial, Verdana;
+opacity:0.9;
+ background-color:rgb(255,255,255);
+}
+
+h1 {
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+img {
+  display: inline-block;
+  width: 220px;
+  height: 160px;
+margin:1px;
+}
+
+.carousel {
+  width: 950px;
+  height: 185px;
+  overflow: hidden;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 0px solid #fff;
+  box-shadow: 0px 0px 10px #fff;
+  margin: 0px auto;
+  border-radius: 5px;
+  background-color:rgb(103,46,143);
+ display:block;
+}
+
+.holder {
+  animation: carousel 100s linear infinite;
+  white-space: nowrap;
+  will-change: transform;
+animation-timing-function: linear;
+}
+  @keyframes animation-name {
+  0% {
+    transform: translateX(5%)
+  }
+  100% {
+    transform: translateX(-50%)
+  }
+}
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+.carousel  a:hover
+{
+opacity: 0.4;
+   overflow:visible;
+   box-sizing:border-box;
+   transition: all 0.9s ease-in-out;
+
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+ms-transform: translate(-50%, -50%);
+
+}
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  
+  50% {
+    transform: translateX(-100%);
+  }
+  
+  100% {
+    transform: translateX(0);
+  }
+}
+</style>
+<body class="body">
+<h1>TOP STORIES</h1>
+<div class="carousel">
+  <div class="holder">
+   <a href="#"><img src="https://inside.dell.com/resources/statics/1496742/ABOUT.JPG?a=1567778342947" alt="" /> </a>
+   <a href="#"> <img src="https://inside.dell.com/resources/statics/1496742/Calendar.jpeg?a=1567780731978" alt="" /></a>
+    <a href="#"><img src="https://inside.dell.com/resources/statics/1496742/Digital%2BFutures.png?a=1567781491685" alt="" /></a>
+   <a href="#"> <img src="https://inside.dell.com/resources/statics/1496742/Men%2BAllies%2BProgram.jpg?a=1567781642134" alt="" /></a>
+   <a href="#"> <img src="https://inside.dell.com/resources/statics/1496742/Career%2BEssentials.jpg?a=1567781222290)" alt="" /></a>
+    <a href="#"><img src="https://inside.dell.com/resources/statics/1496742/IWD.jpg?a=1567782066009)" alt="" /></a>
+    <a href="#"><img src="https://inside.dell.com/resources/statics/1496742/DWEN.JPG?a=1567782181357" alt="" /></a>
+   <a href="#"> <img src="https://inside.dell.com/resources/statics/1496742/RFP2.jpg?a=1567782308227" alt="" /></a>
+  </div>
+</div>
+</body>
+</html>

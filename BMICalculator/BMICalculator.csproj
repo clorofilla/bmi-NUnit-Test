@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>1acb1f3c-5ed2-4c62-8bbb-7ad65d2b228f</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/ee6a9f96-2d77-474c-aa92-f9a20686fb7b/resourcegroups/resource-group-gc/providers/microsoft.insights/components/gc-bmicalculator</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/ee6a9f96-2d77-474c-aa92-f9a20686fb7b/resourcegroups/resource-group-gc/providers/microsoft.insights/components/gc-bmicalculator</ApplicationInsightsAnnotationResourceId>
+ <DebugType>full</DebugType>
+  <DebugSymbols>true</DebugSymbols>
+ </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+	<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+  
+</Project>
