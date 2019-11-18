@@ -71,7 +71,7 @@ namespace BMICalculator.Tests
         //{
         //    // Arrange
         //    var test = new Startup();
-        //    var result= test.Configure()
+        //    var result = test.Configure()
         //    var webHostBuilder = Program.CreateWebHostBuilder(Array.Empty<string>()).UseContentRoot(Path.GetFullPath("../../../../../bmi-master/BMICalculator"));
 
         //    var server = new TestServer(webHostBuilder);
