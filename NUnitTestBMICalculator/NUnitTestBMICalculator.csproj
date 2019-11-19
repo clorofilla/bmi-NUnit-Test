@@ -2,10 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-
+ <UseNETCoreGenerator>true</UseNETCoreGenerator>
     <IsPackable>false</IsPackable>
 	<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
 <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+<AzureFunctionsVersion>v2</AzureFunctionsVersion>
   </PropertyGroup>
 
   <ItemGroup>
