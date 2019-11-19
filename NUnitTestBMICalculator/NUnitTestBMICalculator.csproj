@@ -14,12 +14,17 @@
     <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
 	<PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.1" />
-	<PackageReference Include="Microsoft.AspNetCore.App" />
 	<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="2.1.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BMICalculator\BMICalculator.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NUnit3.TestAdapter">
+      <HintPath>..\..\NUnit.Framework-3.12.0\bin\net45\NUnit3.TestAdapter.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   
