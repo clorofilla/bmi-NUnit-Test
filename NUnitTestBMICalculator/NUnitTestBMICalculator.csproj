@@ -22,10 +22,5 @@
     <ProjectReference Include="..\BMICalculator\BMICalculator.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="NUnit3.TestAdapter">
-      <HintPath>..\..\NUnit.Framework-3.12.0\bin\net45\NUnit3.TestAdapter.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-<Import Project="..\packages\MSTest.TestAdapter.3.12.0\build\net40\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.3.12.0\build\net40\MSTest.TestAdapter.props')" />
+  
 </Project>
