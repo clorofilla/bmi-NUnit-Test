@@ -9,6 +9,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace BMICalculator
 {
+    [ExcludeFromCodeCoverage]
     public class Startup
     {
         public Startup(IConfiguration configuration)

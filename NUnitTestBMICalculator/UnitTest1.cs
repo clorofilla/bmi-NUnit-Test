@@ -1,14 +1,16 @@
 using NUnit.Framework;
-using System;
-using System.IO;
-using System.Net;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.TestHost;
+using System.Diagnostics.CodeAnalysis;
+//using System;
+//using System.IO;
+//using System.Net;
+//using System.Threading.Tasks;
+//using Microsoft.AspNetCore.Hosting;
+//using Microsoft.AspNetCore.TestHost;
 
 namespace BMICalculator.Tests
 {
-    [TestFixture]
+    [ExcludeFromCodeCoverage]
+    
     public class BMITest
     {
 
@@ -46,44 +48,44 @@ namespace BMICalculator.Tests
 
     }
 
-    public class ProgramTest
-    {
+    //public class ProgramTest
+    //{
 
-        [Test]
-        public async Task CanGetHomePage()
-        {
-            // Arrange
-            var webHostBuilder = Program.CreateWebHostBuilder(Array.Empty<string>()).UseContentRoot(Path.GetFullPath("../../../../../bmi-master/BMICalculator"));
-            
-            var server = new TestServer(webHostBuilder);
-            var client = server.CreateClient();
-            
-            // Act
-            var response = await client.GetAsync("/");
+    //    [Test]
+    //    public async Task CanGetHomePage()
+    //    {
+    //        // Arrange
+    //        var webHostBuilder = Program.CreateWebHostBuilder(Array.Empty<string>()).UseContentRoot(Path.GetFullPath("../../../../../bmi-master/BMICalculator"));
 
-            // Assert
-            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
-        }
+    //        var server = new TestServer(webHostBuilder);
+    //        var client = server.CreateClient();
 
-        //[Test]
-        //public async Task Configure()
-        //{
-        //    // Arrange
-        //    var test = new Startup();
-        //    var result = test.Configure()
-        //    var webHostBuilder = Program.CreateWebHostBuilder(Array.Empty<string>()).UseContentRoot(Path.GetFullPath("../../../../../bmi-master/BMICalculator"));
+    //        // Act
+    //        var response = await client.GetAsync("/");
 
-        //    var server = new TestServer(webHostBuilder);
-        //    var client = server.CreateClient();
+    //        // Assert
+    //        Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+    //    }
 
-        //    // Act
-        //    var response = await client.GetAsync("/");
+    //[Test]
+    //public async Task Configure()
+    //{
+    //    // Arrange
+    //    var test = new Startup();
+    //    var result = test.Configure()
+    //    var webHostBuilder = Program.CreateWebHostBuilder(Array.Empty<string>()).UseContentRoot(Path.GetFullPath("../../../../../bmi-master/BMICalculator"));
 
-        //    // Assert
-        //    Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
-        //}
-    }
+    //    var server = new TestServer(webHostBuilder);
+    //    var client = server.CreateClient();
 
+    //    // Act
+    //    var response = await client.GetAsync("/");
+
+    //    // Assert
+    //    Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+    //}
+
+    [ExcludeFromCodeCoverage]
     public class AboutModel
     {
 
@@ -96,6 +98,7 @@ namespace BMICalculator.Tests
         }
     }
 
+    [ExcludeFromCodeCoverage]
     public class BMIModel
     {
 
@@ -108,6 +111,7 @@ namespace BMICalculator.Tests
         }
     }
 
+    [ExcludeFromCodeCoverage]
     public class PrivacyModel
     {
 
@@ -122,5 +126,4 @@ namespace BMICalculator.Tests
             Assert.AreEqual("Your Privacy Policy.", model.Message);
         }
     }
-
 }

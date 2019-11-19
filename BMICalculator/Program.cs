@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace BMICalculator
 {
+    [ExcludeFromCodeCoverage]
     public class Program
 
     { 
