@@ -5,7 +5,8 @@
     <UserSecretsId>1acb1f3c-5ed2-4c62-8bbb-7ad65d2b228f</UserSecretsId>
     <ApplicationInsightsResourceId>/subscriptions/ee6a9f96-2d77-474c-aa92-f9a20686fb7b/resourcegroups/resource-group-gc/providers/microsoft.insights/components/gc-bmicalculator</ApplicationInsightsResourceId>
     <ApplicationInsightsAnnotationResourceId>/subscriptions/ee6a9f96-2d77-474c-aa92-f9a20686fb7b/resourcegroups/resource-group-gc/providers/microsoft.insights/components/gc-bmicalculator</ApplicationInsightsAnnotationResourceId>
- <DebugType>full</DebugType>
+<AzureFunctionsVersion>v2</AzureFunctionsVersion>
+	<DebugType>full</DebugType>
   <DebugSymbols>true</DebugSymbols>
  </PropertyGroup>
 
